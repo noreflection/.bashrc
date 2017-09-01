@@ -1,4 +1,4 @@
-#Repositories
+#repositories
 alias r='cd ~/Repositories'
 alias 19='cd ~/Repositories/19/'
 alias lp='cd ~/Documents/LINQPadQueries/'
@@ -8,19 +8,21 @@ alias rrex='cd ~/Repositories/ReactReduxEx/'
 alias s='cd ~/Repositories/ssr/'
 alias j='cd ~/Repositories/jwt/'
 
-#Working repositories
+#other repositories
 
-#Git
+#git
 alias g='git'
 alias gs='git status'
-alias gl='git clone'
+alias ga='git add .'
+alias gd='git diff'
+alias gcl='git clone'
+alias gl='git log'
 alias gc='git commit -m'
-alias ge='gitextensions'
 alias gk='gitk'
+alias ge='gitextensions'
 
-#Bash
+#bash
 alias ~='cd ~'
-#alias l='ls'
 alias p='pwd'
 alias ls='ls -a -1 --color -h --group-directories-first'
 alias e='exit'
@@ -40,5 +42,5 @@ alias db='dotnet build'
 alias drun='dotnet run'
 alias dn='dotnet new'
 
-#Windows specific
+#windows specific
 alias ex='explorer'
