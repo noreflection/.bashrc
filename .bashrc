@@ -7,6 +7,8 @@ alias rex='cd ~/Repositories/ReactEx/'
 alias rrex='cd ~/Repositories/ReactReduxEx/'
 alias s='cd ~/Repositories/ssr/'
 alias j='cd ~/Repositories/jwt/'
+alias jc='cd ~/Repositories/jwt/client/src/components/'
+alias vu='cd ~/AppData/Roaming/Code/User'
 
 #other repositories
 
