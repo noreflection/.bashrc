@@ -1,16 +1,17 @@
 #repositories
 alias r='cd ~/Repositories'
-alias 19='cd ~/Repositories/19/'
-alias lp='cd ~/Documents/LINQPadQueries/'
-alias vex='cd ~/Repositories/VueJsEx/'
-alias rex='cd ~/Repositories/ReactEx/'
-alias rrex='cd ~/Repositories/ReactReduxEx/'
-alias s='cd ~/Repositories/ssr/'
-alias j='cd ~/Repositories/jwt/'
-alias jc='cd ~/Repositories/jwt/client/src/components/'
-alias vu='cd ~/AppData/Roaming/Code/User'
+alias 11='cd ~/Repositories/11/'
+alias lp="cd ~/Documents/'LINQPad Queries'/"
+
+alias scc='cd ~/Repositories/statistics/client/src/App/'
+alias sc='cd ~/Repositories/statistics/client/'
+alias sd='cd ~/Repositories/statistics/domain/'
+alias sa='cd ~/Repositories/statistics/api/'
+
+alias gt='cd ~/Repositories/gittest'
 
 #other repositories
+alias odc='cd ~/Repositories/ozon.ui.dispatcher/frontend/'
 
 #git
 alias g='git'
@@ -19,7 +20,11 @@ alias ga='git add .'
 alias gd='git diff'
 alias gcl='git clone'
 alias gl='git log'
-alias gc='git commit -m'
+alias gcm='git commit -m'
+
+alias gb='git branch'
+alias gch='git checkout'
+
 alias gk='gitk'
 alias ge='gitextensions'
 
