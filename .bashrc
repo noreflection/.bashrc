@@ -1,17 +1,13 @@
 #repositories
-alias r='cd ~/Repositories'
-alias 11='cd ~/Repositories/11/'
+alias r='cd ~/repositories'
+alias 11='cd ~/repositories/11/'
 alias lp="cd ~/Documents/'LINQPad Queries'/"
 
-alias scc='cd ~/Repositories/statistics/client/src/App/'
-alias sc='cd ~/Repositories/statistics/client/'
-alias sd='cd ~/Repositories/statistics/domain/'
-alias sa='cd ~/Repositories/statistics/api/'
+alias sd='cd ~/repositories/statistics/domain/'
+alias sa='cd ~/repositories/statistics/api/'
 
-alias gt='cd ~/Repositories/gittest'
-
-#other repositories
-alias odc='cd ~/Repositories/ozon.ui.dispatcher/frontend/'
+alias gt='cd ~/repositories/gittest'
+alias rct='cd ~/repositories/fullstack-react-code/'
 
 #git
 alias g='git'
@@ -25,8 +21,13 @@ alias gcm='git commit -m'
 alias gb='git branch'
 alias gch='git checkout'
 
+alias gcn='git config user.name'
+alias gce='git config user.email'
+
 alias gk='gitk'
 alias ge='gitextensions'
+alias gun='git config user.name'
+alias gue='git config user.email'
 
 #bash
 alias ~='cd ~'
@@ -35,19 +36,29 @@ alias ls='ls -a -1 --color -h --group-directories-first'
 alias e='exit'
 alias eb='code ~/.bashrc'
 
-#node
-alias n='npm'
-alias ni='npm install'
-alias nig='npm install -g'
-alias nis='npm install --save'
-alias nr='npm run'
-
-#dotnet/cli
+#dotnet
 alias d='dotnet'
 alias dr='dotnet restore'
 alias db='dotnet build'
 alias drun='dotnet run'
 alias dn='dotnet new'
 
+#yarn
+alias y='yarn'
+alias ys='yarn start'
+alias yb='yarn build'
+alias yt='yarn test'
+
+#node
+alias n='npm'
+alias ns='npm start'
+alias ni='npm install'
+alias nr='npm run'
+
+#frontend tools
+alias cra='create-react-app'
+
+#other
 #windows specific
+alias ex='explorer'
 alias ex='explorer'
