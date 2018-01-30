@@ -1,6 +1,6 @@
 [user]
 	name = andy
-	email = d6e6v9@gmail.com
+	email = 
 [http]
 	
 [push]
@@ -10,37 +10,26 @@
 	editor = code --wait
 	filemode = false
 [color]
-	diff   = true
-	grep   = true
+	diff = true
+	grep = true
 	status = true
-	ui     = true
-
-	[color "branch"]
-		current = yellow reverse
-		local   = yellow
-		remote  = green
-
-	[color "diff"]
-		meta       = normal
-		frag       = magenta bold
-		old        = red bold
-		new        = blue bold
-		whitespace = red reverse
-
-	[color "status"]
-		added      = yellow
-		changed    = green
-		untracked  = cyan
-		
+	ui = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = normal
+	frag = magenta bold
+	old = red bold
+	new = blue bold
+	whitespace = red reverse
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
 [credential]
 	helper = cache --timeout=3600
-#[merge]
-	#tool = vimdiff
-#[mergetool]
-	#keeptemporaries = false
-	#keepbackups = false
-	#prompt = false
-	#trustexitcode = false
 [alias]
 	last = log -1 --stat
 	cp = cherry-pick
@@ -53,28 +42,22 @@
 	dc = diff --cached
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+	grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
 [diff]
-	tool=bc4
+	tool = default-difftool
+	guitool = kdiff3
 [difftool]
-	prompt=false
-[difftool "bc4"]
-	#use cygpath to transform cygwin path $LOCAL (something like /tmp/U5VvP1_abc) to windows path, because bc3 is a windows software
-    cmd = \"c:/Program Files/Beyond Compare 4/BCompare.exe\" "$(cygpath -w $LOCAL)" "$REMOTE"
+	prompt = false
+[difftool "default-difftool"]
+	cmd=code --wait --diff $LOCAL $REMOTE
+[difftool "code"]
+	cmd = \"code\" $(cygpath -w $LOCAL)$REMOTE
 [merge]
-    tool = bc3
+	tool = code
 [mergetool]
-    prompt = false
+	prompt = false
 	keepBackup = false
-[mergetool "bc3"]
-    #trustExitCode = true
-    cmd = \"c:/Program Files/Beyond Compare 4/BCompare.exe\" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
-
-#[merge]
-#   tool = bc4
-#[mergetool "bc4"]
-#   cmd = "bc4"
-#   trustExitCode = true
-#[diff]
-	#guitool = default-difftool
-#[difftool "default-difftool"]
-	#cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool "code"]
+	cmd = \"code\" $LOCAL$REMOTE$BASE$MERGED
+[difftool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
